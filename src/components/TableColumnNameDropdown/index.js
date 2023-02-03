@@ -1,21 +1,23 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import { useClickAway } from 'react-use';
 
 import style from './style.module.scss';
 
-const arr = [1, 2, 3, 4, 5, 6, 7];
-
-const Dropdown = ({ isOpened }) => {
-  console.log('isOpened', isOpened);
-  return (
+const Dropdown = ({ isOpened, setIsOpened, products }) => {
+  const refDropDown = useRef();
+  useClickAway(refDropDown, () => {
+    setIsOpened(false);
+  });
+  return (isOpened && (
     <div
-      style={{ display: 'none' }}
+      ref={refDropDown}
       className={style.main}
     >
-      {arr.map(e => (
-        <span>{e}</span>
+      {products.map(e => (
+        <span key={e.uuid}>{e.productName}</span>
       ))}
     </div>
-  );
+  ));
 };
 
 export default Dropdown;

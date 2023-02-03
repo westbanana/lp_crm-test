@@ -3,14 +3,16 @@ import React from 'react';
 import style from './style.module.scss';
 
 import { ReactComponent as ImageButton } from '../../assets/addRowButton.svg';
+import uuid from '../../helpers/createUUID';
 
-const AddRowButton = ({ setTestProductsArray }) => {
+const AddRowButton = ({ setProductsArray }) => {
   const addRow = () => {
-    setTestProductsArray(prev => (
+    setProductsArray(prev => (
       [{
         status: false,
         product: 'XXXX',
         id: null,
+        uuid: uuid(),
         productName: '',
         productImage: '?',
       }, ...prev]

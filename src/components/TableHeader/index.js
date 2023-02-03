@@ -6,15 +6,36 @@ import TableColumnName from '../TableColumnName';
 import AddRowButton from '../AddRowButton';
 import RemoveRowsButton from '../RemoveRowsButton';
 
-const TableHeader = ({ setTestProductsArray }) => (
+const TableHeader = ({
+  selectedItems, setSelectedItems, productsArray, setProductsArray,
+}) => (
   <div className={style.main}>
-    <TableColumnName name="Статус" />
-    <TableColumnName name="Товар" />
-    <TableColumnName name="ID" />
-    <TableColumnName name="Название" />
+    <TableColumnName
+      products={productsArray}
+      name="Статус"
+    />
+    <TableColumnName
+      products={productsArray}
+      name="Товар"
+    />
+    <TableColumnName
+      products={productsArray}
+      name="ID"
+    />
+    <TableColumnName
+      products={productsArray}
+      name="Название"
+    />
     <div className={style.buttonsContainer}>
-      <AddRowButton setTestProductsArray={setTestProductsArray} />
-      <RemoveRowsButton />
+      <AddRowButton setProductsArray={setProductsArray} />
+      {!!selectedItems.length && (
+        <RemoveRowsButton
+          productsArray={productsArray}
+          setProductsArray={setProductsArray}
+          selectedItems={selectedItems}
+          setSelectedItems={setSelectedItems}
+        />
+      )}
     </div>
   </div>
 );
