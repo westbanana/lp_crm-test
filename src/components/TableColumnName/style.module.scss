@@ -6,6 +6,11 @@
   }
   .inputBlock{
     position: relative;
+    .selectedProducts{
+      display: block;
+      height: 27px;
+      width: 100%;
+    }
     input{
       background: transparent;
       font-weight: 300;
@@ -14,6 +19,7 @@
       border-bottom: 2px black solid;
       padding-right: 15px;
       width: 100%;
+      text-overflow: ellipsis;
     }
   .dropdownArrowOpened{
     position: absolute;

@@ -1,0 +1,34 @@
+.main{
+  .selectedImage{
+    width: 20px;
+    cursor: pointer;
+  }
+  .imagesList{
+    position: absolute;
+    width: 200px;
+    height: 103px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(2px);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    justify-items: center;
+    animation: show 0.3s linear forwards;
+    .imagesListItem{
+      transition: 0.2s;
+      &:hover{
+        cursor: pointer;
+        opacity: 0.6;
+      }
+  }
+}
+
+@keyframes show {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}}

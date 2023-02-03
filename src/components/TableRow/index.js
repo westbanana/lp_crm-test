@@ -3,6 +3,8 @@ import React from 'react';
 import style from './style.module.scss';
 
 import { ReactComponent as RemoveRow } from '../../assets/removeRow.svg';
+import Switch from '../Switch';
+import SelectRowImage from '../SelectRowImage';
 
 const TableRow = ({
   item,
@@ -11,9 +13,14 @@ const TableRow = ({
   onItemClick,
   isSelected,
 }) => {
-  const onChangeValue = (e, fieldKey) => {
+  const onChangeInput = (e, fieldKey) => {
     updateRow(item.uuid, { [fieldKey]: e.target.value });
   };
+
+  const onChangeField = (newValue, fieldKey) => {
+    updateRow(item.uuid, { [fieldKey]: newValue });
+  };
+
   const stopPropagation = (e) => {
     e.stopPropagation();
   };
@@ -29,27 +36,33 @@ const TableRow = ({
       className={`${style.main} ${isSelected && (style.selectedItem)}`}
     >
       <div className={style.inputStatusBlock}>
-        <input
-          onClick={stopPropagation}
-          type="checkbox"
+        <Switch
+          onChange={newValue => onChangeField(newValue, 'status')}
+          value={item.status}
         />
       </div>
       <span className={style.itemProduct}>{item.product}</span>
       <input
         onClick={stopPropagation}
         type="number"
+        disabled={item.status}
         autoFocus
-        onChange={e => onChangeValue(e, 'id')}
+        onChange={e => onChangeInput(e, 'id')}
         className={`${style.inputRow} ${!item.id && style.emptyField}`}
-        placeholder={item.id}
+        value={item.id}
       />
       <div className={style.inputProductNameBlock}>
-        <span className={style.productImage}>{item.productImage}</span>
+        <SelectRowImage
+          disabled={item.status}
+          value={item.productImage}
+          onChange={newValue => onChangeField(newValue, 'productImage')}
+        />
         <input
+          disabled={item.status}
           onClick={stopPropagation}
           className={`${style.inputRow} ${!item.productName && style.emptyField}`}
-          onChange={e => onChangeValue(e, 'productName')}
-          placeholder={item.productName}
+          onChange={e => onChangeInput(e, 'productName')}
+          value={item.productName}
         />
       </div>
       <RemoveRow

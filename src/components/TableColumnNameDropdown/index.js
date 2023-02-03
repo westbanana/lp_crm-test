@@ -3,18 +3,38 @@ import { useClickAway } from 'react-use';
 
 import style from './style.module.scss';
 
-const Dropdown = ({ isOpened, setIsOpened, products }) => {
+import { ReactComponent as SelectedDot } from '../../assets/selectedItem.svg';
+
+const Dropdown = ({
+  isOpened,
+  setIsOpened,
+  productsOptions,
+  selectProduct,
+  selectedProducts,
+}) => {
   const refDropDown = useRef();
   useClickAway(refDropDown, () => {
     setIsOpened(false);
   });
-  return (isOpened && (
+  return (isOpened && !!productsOptions.length && (
     <div
       ref={refDropDown}
       className={style.main}
     >
-      {products.map(e => (
-        <span key={e.uuid}>{e.productName}</span>
+      {productsOptions.map(item => (
+        <div
+          key={item}
+          onClick={() => selectProduct(item)}
+          role="presentation"
+          className={style.product}
+        >
+          <SelectedDot
+            className={`${style.dot} ${selectedProducts.includes(item) && style.showDot}`}
+          />
+          <span className={style.productName}>
+            {item}
+          </span>
+        </div>
       ))}
     </div>
   ));

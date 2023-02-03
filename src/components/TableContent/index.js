@@ -23,6 +23,7 @@ const TableContent = ({
 
   const deleteRow = (uuid) => {
     setProductsArray(prev => prev.filter(item => item.uuid !== uuid));
+    setSelectedItems(prev => prev.filter(itemUUID => itemUUID !== uuid));
   };
 
   const onItemClick = (uuid) => {

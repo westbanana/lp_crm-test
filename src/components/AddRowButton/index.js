@@ -10,11 +10,11 @@ const AddRowButton = ({ setProductsArray }) => {
     setProductsArray(prev => (
       [{
         status: false,
-        product: 'XXXX',
-        id: null,
+        product: 'XXXX-',
+        id: '',
         uuid: uuid(),
         productName: '',
-        productImage: '?',
+        productImage: 'kyivstar',
       }, ...prev]
     ));
   };

@@ -7,7 +7,7 @@ import TableContent from './components/TableContent';
 const App = () => {
   const [productsArray, setProductsArray] = useState([]);
   const [selectedItems, setSelectedItems] = useState([]);
-  console.log(productsArray);
+
   return (
     <div className={style.App}>
       <TableHeader
