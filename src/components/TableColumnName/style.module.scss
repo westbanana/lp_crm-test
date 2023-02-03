@@ -1,0 +1,34 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  .columnName{
+    font-weight: 600;
+  }
+  .inputBlock{
+    position: relative;
+    input{
+      background: transparent;
+      font-weight: 300;
+      outline: none;
+      border: none;
+      border-bottom: 2px black solid;
+      padding-right: 15px;
+      width: 100%;
+    }
+  .dropdownArrowOpened{
+    position: absolute;
+    top: calc(50% - 2.5px);
+    right: 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .dropdownArrowClosed{
+    position: absolute;
+    top: calc(50% - 2.5px);
+    right: 0;
+    cursor: pointer;
+    transition: 0.3s;
+    transform: rotate(180deg);
+  }
+  }
+}

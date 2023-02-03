@@ -1,0 +1,38 @@
+.main{
+
+  background: rgba(255, 0, 0, 0.39);
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 30px;
+  input{
+    background: transparent;
+    width: 100%;
+  }
+  .inputStatusBlock{
+    display: flex;
+    align-items: center;
+    input{
+      margin-left: 30px;
+    }
+  }
+  .itemProduct{
+
+  }
+  .inputId{
+    border: none;
+    outline:none;
+  }
+  .inputProductNameBlock{
+    input{
+      border: none;
+      outline: none;
+    }
+  }
+  .emptyField{
+    border-bottom: black 2px solid;
+  }
+  .productImage{
+    display: none;
+  }
+}
