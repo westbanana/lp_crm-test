@@ -8,6 +8,7 @@
   top: 27px;
   box-shadow: rgba(0, 0, 0, 0.15) 0 3px 5px;
   background: #ffffff;
+  z-index: 10;
   &::-webkit-scrollbar{
     width:4px;
     background-color: rgba(178, 178, 178, 0.32);
