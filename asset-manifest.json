@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/lp_crm-test/static/css/main.1a4805a5.css",
+    "main.js": "/lp_crm-test/static/js/main.8380783e.js",
+    "static/media/Shop Logistics.svg": "/lp_crm-test/static/media/Shop Logistics.24deaac8c1352c66e44c71982c5cb8be.svg",
+    "static/media/Rozetka.svg": "/lp_crm-test/static/media/Rozetka.f42b62287fe2f46a21d65065d3797791.svg",
+    "static/media/Fotos.svg": "/lp_crm-test/static/media/Fotos.f9870c903a099cf6862911fe67705ba1.svg",
+    "static/media/Vector-1.svg": "/lp_crm-test/static/media/Vector-1.f094c6ea5a9eba0971d2e65387148f1f.svg",
+    "static/media/UPS.svg": "/lp_crm-test/static/media/UPS.4c045bd417726a8284a347cd7179f788.svg",
+    "static/media/Amazon.svg": "/lp_crm-test/static/media/Amazon.3174c1d27ca01ef8b3f7b43032aa1c84.svg",
+    "static/media/Kyivstar.svg": "/lp_crm-test/static/media/Kyivstar.d05f9eb7c60d03c5a683b58d536f3e7c.svg",
+    "static/media/flag.svg": "/lp_crm-test/static/media/flag.be0911dd719dc955bb5b006d7fe476a1.svg",
+    "index.html": "/lp_crm-test/index.html",
+    "static/media/removeRowsButton.svg": "/lp_crm-test/static/media/removeRowsButton.8152c1bb3da7520cdb808470b8ec5b16.svg",
+    "static/media/addRowButton.svg": "/lp_crm-test/static/media/addRowButton.817905d85884dbc94189a0e617e7d893.svg",
+    "static/media/Delivery.svg": "/lp_crm-test/static/media/Delivery.32d05b56d708268b3561024725ea9213.svg",
+    "static/media/joom.svg": "/lp_crm-test/static/media/joom.d8efacf055089a7265223dfabe42ed24.svg",
+    "static/media/Ebay.svg": "/lp_crm-test/static/media/Ebay.1fcc91415b2abbfddac2db025fc80982.svg",
+    "static/media/Modna kasta.svg": "/lp_crm-test/static/media/Modna kasta.fb8dc7b34cba533f532634c8e46be7bd.svg",
+    "static/media/Autolux.svg": "/lp_crm-test/static/media/Autolux.4398c72df711b9f9c1b8111e5605d689.svg",
+    "static/media/Vector.svg": "/lp_crm-test/static/media/Vector.f00585ec35779cf068e43e58c16bf9da.svg",
+    "static/media/Meest express.svg": "/lp_crm-test/static/media/Meest express.c42aa317177d21895630262c9d5ba4f5.svg",
+    "static/media/removeRow.svg": "/lp_crm-test/static/media/removeRow.acdcaa9aa12b350999f06715b91bfd99.svg",
+    "static/media/PromUa.svg": "/lp_crm-test/static/media/PromUa.bfd8797d4e561cee7a94b43f77144621.svg",
+    "static/media/selectedItem.svg": "/lp_crm-test/static/media/selectedItem.df2996067d5ecd43a7494b90ce3f9cdc.svg",
+    "static/media/dropdownArrow.svg": "/lp_crm-test/static/media/dropdownArrow.56f69c89665fc09e7636de2f0cd63047.svg",
+    "main.1a4805a5.css.map": "/lp_crm-test/static/css/main.1a4805a5.css.map",
+    "main.8380783e.js.map": "/lp_crm-test/static/js/main.8380783e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a4805a5.css",
+    "static/js/main.8380783e.js"
+  ]
+}
