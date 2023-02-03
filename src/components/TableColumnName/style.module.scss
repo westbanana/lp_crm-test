@@ -27,6 +27,7 @@
     right: 0;
     cursor: pointer;
     transition: 0.3s;
+    transform: rotate(180deg);
   }
   .dropdownArrowClosed{
     position: absolute;
@@ -34,7 +35,6 @@
     right: 0;
     cursor: pointer;
     transition: 0.3s;
-    transform: rotate(180deg);
   }
   }
 }
